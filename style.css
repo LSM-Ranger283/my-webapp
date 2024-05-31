@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+h1{
+    color:white;
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+
+/* The main style */
+* {
+    /*Montserrat font*/
+    /*font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;*/
+    
+    /*Open Sans font*/
+    /*font-family: "Open Sans", sans-serif;
+    font-variation-settings:*/
+    
+    /*.lato-regular {*/
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: grey;
+    font-size: 15px;
+  }
+  
+
+
+body {
+    background: white;
+    display: flex;
+    flex-direction: column; /* This allows us to create a layout with a top header */
+    height: 110vh; /* Full viewport height */
+
+}
+
+/* blue title header */
+.header {
+    background-color: midnightblue;
+   font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+
+}
+/* Thick white line*/
+ .header_line {
+    display: block;
+    border-top: 1px solid white; /* Horizontal line */
+    width: 93%; /* Full width */
+    margin: 23px; /* make the blue header banner bigger */
+    margin-top: -17px; /* Space between the line and the header */
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+
+ }
+
+.title-logo {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    align-items: center; /* Vertically align items */
+    padding-top: 10px; /* Adjust padding as needed */
+
+}
+
+.title-logo h1 {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 0; /* No gap between text and line */
+}
+
+.title-logo img {
+    margin-right: 10px; /* Space between the logo and the title */
+}
+
+.logo {
+    width: 80px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+.content {
+    flex: 1; /* Occupies the remaining space in the middle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 420px;
+    background: midnightblue;
+    color:white;
+    padding: 20px; /* Adds space in the container */
+}
+
+/* Header text */
+.header h1 {
+    font-size: 40px; /* Header St Johns text */
+}
+
+/* Input box styling */
+.input-box-email {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 0px 0 0px; /* Adjusted margin */
+    transform: translateY(-50%);
+}
+
+
+.input-box-email input {
+    width: 100%;
+    height: 100%; 
+    font-size: 16px;
+    color: black;
+    padding: 10px;
+}
+
+.input-box-password {
+    position: relative;
+    width: 75%;
+    margin: 10px 0; /* Adjusted margin */
+}
+
+.input-box-password input {
+    width: 100%;
+    height: 100%; /* Adjusted height */
+    font-size: 16px;
+    color: black;
+    padding: 10px;
+}
+
+.input-header-password {
+    margin-bottom: 5px; /* Removed unnecessary margin */
+    color: white;
+    font-size: 20px;
+}
+
+
+.input-header{
+    margin-bottom: 5px; /* Reduce the margin to bring the headers closer to the input fields */
+    color: white;
+    font-size: 20px;
+}
+
+.input-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+/* Wrapper for the password field and login button */
+.input-box-password-and-login {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 100px; /* Add a small gap between elements */
+}
+
+.password-input {
+    flex: 1; /* Make it flexible to take remaining space */
+    height: 40px; /* Set height */
+    font-size: 16px;
+    padding: 10px;
+}
+/* Center the Sign In heading */
+.sign-in-heading {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Add some vertical padding */
+}
+
+
+.login-button {
+    height: 30px; /* Match the height of the password field */
+    width: 25%;
+    background: black;
+    border: yellow;
+    outline: none;
+    cursor: pointer;
+    color: yellow; /* Color contrast for the button text */
+    font-weight: 600; /* Bold text */
+    padding: 1%;
+    font-size: 15pt;
+    
+}
+
+
+/* Remember and forgot styling */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 8px 0 0px;
+}
+
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Login Button styling */
+.wrapper .login {
+    width: 25%;
+    height: 45px;
+    background: black;
+    border: yellow;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: yellow; /* Color contrast for the button text */
+    font-weight: 600; /*bold text*/
+    
+}
+.input-header-email {
+    margin-bottom: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+
+.input-box-email {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 30px 0 10px; /* Adjusted margin-bottom */
+}
+
+.input-box-password {
+    position: relative;
+    width: 75%;
+    height: 40px;
+    margin: 10px 0; /* Adjusted margin-bottom */
+}
+
+.input-box-email h2,
+.input-box-password h2 {
+    position: absolute; /* Position the headers absolutely */
+    top: -20px; /* Adjust the top position to be above the input fields */
+    left: 0; /* Align headers to the left */
+    color: white; /* Set the color of the header text */
+    font-size: 18px; /* Adjust the font size as needed */
+}
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: black;
+    border: yellow;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: yellow; /* Color contrast for the button text */
+    font-weight: 600; /*bold text*/
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0; /* adds more space between the 'or' text and the create new account button  */
+}
+
+.separator hr {
+    flex: 1; /* Ensure the lines stretch to fill the space */
+    border: none;
+    border-top: 1px solid grey; /* Solid border for the horizontal lines */
+}
+
+.separator span {
+    margin: 0 10px; /* Space between the horizontal lines */
+    color: grey; /* Color for the "or" text */
+    font-size: 30px;
+    font-weight: 600; /* Bold text */
+}
+.footer{
+    background-color: midnightblue;
+    color: white;
+    padding:15pt;
+}
+h6{
+    margin-left: auto;
+    margin-right:0;
+    text-align: right;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-style: normal; 
+    font-size: 20px;
+  
+}
+.footer_line{
+    border:1px solid white;
+   text-align: right;
+   margin-left: auto;
+   margin-right: 0;
+   width: 30%;
+   margin-bottom: 10px;
+}
+.back-arrow img{
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Mobile styles portrait */
+@media only screen and (max-width: 850px) {
+
+    body {
+       height: 100%;
+        margin: 0;
+        padding: 0; 
+        display: flex;
+        flex-direction: column;
+        min-height: 150vh;
+    }
+    
+
+    .wrapper { /*design of outside the container*/
+        width: 90%; /* Make the wrapper take up most of the screen width */
+        padding: 20px; /* Adjust padding for mobile */
+        position: absolute;
+        /*transform: translateY(75%); /*move the container down the phone page*/
+    }
+
+    .content { /*design of inside the container*/
+        flex: 1; /* Occupies the remaining space in the middle */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 25px; /* Adjust header font size */
+    }
+
+
+    .header_line {
+        width: 78%; /* Full width for header line */
+        margin: 10px 0; /* Adjust margin */
+        margin-top: -21px; /* Space between the line and the header */
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .title-logo {
+        display: flex;
+        flex-direction: row; /* Align items in a row */
+        align-items: center; /* Vertically align items */
+        padding-top: 5px; /* how big is the banner above */
+    
+    }
+    
+    .title-logo h1 {
+        font-size: 25px;
+        color: white;
+        margin-bottom: -15px; /* No gap between text and line */
+    }
+    
+    .title-logo img {
+        margin-right: 10px; /* Space between the logo and the title */
+    }
+    
+    .logo {
+        width: 80px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px;
+    }
+    
+
+    h6 {
+        font-size: 10px; /* Adjust footer text size */
+    }
+    .input-box-password {
+        position: relative;
+        width: 75%;
+        height: 40px;
+        margin: 10px 0 0; /* Adjusted margin-bottom */
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .login-button {
+        height: 30px; /* Match the height of the password field */
+        /*width: 25%;*/
+        background: black;
+        border: yellow;
+        outline: none;
+        color: yellow; /* Color contrast for the button text */
+        font-weight: 600; /* Bold text */
+        padding: 1%;
+        width: 25%; /* Full width for login button */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .input-box-email input, .input-box-password input {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .input-header {
+        font-size: 18px; /* Adjust input header size */
+    }
+
+    .separator span {
+        font-size: 20px; /* Adjust separator text size */
+    }
+    .footer{
+        /*display: none;*/
+        padding:10px;
+        clear:both;
+        box-sizing: border-box; /* define height and width of the footer container */
+        bottom: 0; 
+        width: 100%;
+        /*display: none;*/
+    }
+    .footer_line {
+        width: 50%; /* Full width for footer line */
+        margin-bottom: 10px;
+    }
+
+}
+
+/*Phone landscape css only*/
+/* Media query for mobile landscape mode */
+/* Media query for mobile landscape mode (768px and narrower) */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    body {
+        flex-direction: row;
+        align-items: flex-start;
+        height: auto; /* Adjust height for landscape*/
+    }
+
+    .wrapper {
+        width: 80%;
+        padding: 10px;
+    }
+}
+
+/* Specific styles for elements to adjust in mobile landscape*/
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .input-box-email, .input-box-password {
+        width: 80%;
+    }
+
+    .login-button, .wrapper .login {
+        width: 80%;
+    }
+
+    .header_line {
+        width: 80%;
+        margin: 5px 0;
+    }
+
+    .footer_line {
+        width: 80%;
+        margin-bottom: 5px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+
+    .title-logo {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .title-logo img {
+        margin-right: 5px;
+    }
+
+    .input-box-password-and-login {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .login-button {
+        width: auto;
+        font-size: 12px;
+    }
+
+    .input-box-email input, .input-box-password input {
+        font-size: 12px;
+    }
+
+    .input-header {
+        font-size: 16px;
+    }
+
+    .separator span {
+        font-size: 16px;
+    }
+
+    .footer {
+        position: static;
+        bottom: auto;
+        width: 100%;
+    }
+}
